@@ -10,7 +10,7 @@ class CategoryList extends Component {
       <Paper component="ul">
         {
           Array.isArray(categories) ? categories.map((categoryItem) => (
-            <CategoryListItem newsItem={categoryItem} key={categoryItem.id}/>
+            <CategoryListItem categoryItem={categoryItem} key={categoryItem.id}/>
           )) : ('Категорий нет')
         }
       </Paper>
