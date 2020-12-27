@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from '../header';
 import './app.css';
 import GoodsPage from '../pages/goods';
-import BasketPage from '../pages/basket';
+import CartPage from '../pages/cart';
 import OrderPage from '../pages/order';
 import HistoryPage from "../pages/history";
 import Footer from '../footer';
@@ -22,8 +22,8 @@ function App() {
           component={GoodsPage}
         />
         <Route
-          path="/basket"
-          component={BasketPage}
+          path="/cart"
+          component={CartPage}
         />
         <Route
           path="/order"
