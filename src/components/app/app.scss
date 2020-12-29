@@ -1,0 +1,36 @@
+$root-font-size: 16px;
+
+$workArea1015: 915px;
+$colgap: 20px;
+$colamount: 12;
+
+$currentWorkArea: $workArea1015;
+
+@function rem($size) {
+  @return $size / $root-font-size * 1rem;
+}
+
+@function colsize($workAreasize, $colgap, $colamount) {
+  @return rem(( $workAreasize - ($colgap * ($colamount - 1)) ) / $colamount);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, colsize($currentWorkArea, $colgap, $colamount));
+  column-gap: rem($colgap);
+}
+
+html {
+  background-color: white !important;
+}
+
+html body {
+  margin: 0;
+  background-color: white;
+  font-weight: 300;
+}
+
+.container {
+  max-width: rem(915px);
+  margin: 0 rem(50px);
+}

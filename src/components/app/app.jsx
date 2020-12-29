@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Header from '../header';
-import './app.css';
+import './app.scss';
 import GoodsPage from '../pages/goods';
 import CartPage from '../pages/cart';
 import OrderPage from '../pages/order';
