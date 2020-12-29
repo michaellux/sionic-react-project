@@ -1,0 +1,29 @@
+.header__wrapper {
+    grid-template-areas:
+        "logo location search cart profile";
+}
+
+.header__title {
+  grid-area: logo;
+  grid-column: span 2;
+}
+
+.header__locationBlock {
+  grid-area: location;
+  grid-column: span 2;
+}
+
+.header__searchBlock {
+  grid-area: search;
+  grid-column: span 6;
+}
+
+.header__cartButton {
+  grid-area: cart;
+  grid-column: span 1;
+}
+
+.header__profileButton {
+  grid-area: profile;
+  grid-column: span 1;
+}

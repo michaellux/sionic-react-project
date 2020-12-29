@@ -7,10 +7,10 @@ class CategoryList extends Component {
   render() {
     const { categories } = this.props;
     return (
-      <Paper component="ul">
+      <Paper className="main__categoryList categoryList" component="ul">
         {
           Array.isArray(categories) ? categories.map((categoryItem) => (
-            <CategoryListItem categoryItem={categoryItem} key={categoryItem.id}/>
+            <CategoryListItem className="categoryList__item" categoryItem={categoryItem} key={categoryItem.id}/>
           )) : ('Категорий нет')
         }
       </Paper>
