@@ -6,12 +6,12 @@ import Sidebar from '../../sidebar';
 const GoodsPage = () =>
   <main className="main">
     <div className="main__container container">
-      <section className="main__wrapper wrapper">
-          <h2 className="main__categoryTitle">Категории товаров</h2>
-          <a className="main__categorySettings" href="#">Настройки</a>
+      <section className="goods__wrapper goods wrapper">
+          <h2 className="goods__categoryTitle">Категории товаров</h2>
+          <a className="goods__categorySettings" href="#">Настройки</a>
           <CategoryList />
           <GoodsList />
-          <button className="main__moreButton">Показать больше товаров</button>
+          <button className="goods__moreButton">Показать больше товаров</button>
         </section>
     </div>
     <Sidebar />

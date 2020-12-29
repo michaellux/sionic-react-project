@@ -8,11 +8,11 @@ class GoodsList extends Component {
   render() {
     const { goods } = this.props;
     return (
-      <Paper className="main__goods goods" container spacing={3}>
+      <Paper className="goods__list list" container spacing={3}>
         {
           Array.isArray(goods) ? goods.map((goodsItem) => (
-            <Grid className="goods__wrapper" item xs={6} sm={3} key={goodsItem.id}>
-              <GoodsListItem className="goods__item" goodsItem={goodsItem} />
+            <Grid className="list__wrapper" item xs={6} sm={3} key={goodsItem.id}>
+              <GoodsListItem className="list__item" goodsItem={goodsItem} />
             </Grid>
           )) : ('Товаров нет')
         }

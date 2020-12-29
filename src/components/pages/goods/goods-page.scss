@@ -1,4 +1,4 @@
-.main__wrapper {
+.goods__wrapper {
   grid-template-areas:
         "title settings ..."
         "categories ... ..."
@@ -6,27 +6,27 @@
         "... morebutton ...";
 }
 
-.main__categoryTitle {
+.goods__categoryTitle {
   grid-area: title;
   grid-column: span 3;
 }
 
-.main__categorySettings{
+.goods__categorySettings{
   grid-area: settings;
   grid-column: span 8;
 }
 
-.main__categoryList {
+.goods__categoryList {
   grid-area: categories;
   grid-column: span 12;
 }
 
-.main__goods {
+.goods__list {
   grid-area: goods;
   grid-column: span 12;
 }
 
-.main__moreButton {
+.goods__moreButton {
   grid-area: morebutton;
   grid-column: 5/span 4;
 }
