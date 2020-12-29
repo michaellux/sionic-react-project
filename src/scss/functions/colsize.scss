@@ -1,0 +1,5 @@
+@import '../variables.scss';
+
+@function colsize($workAreasize, $colgap, $colamount) {
+  @return rem(( $workAreasize - ($colgap * ($colamount - 1)) ) / $colamount);
+}
