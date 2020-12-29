@@ -1,0 +1,20 @@
+.main__wrapper {
+  grid-template-areas:
+        "title clearButton"
+        "cart cart";
+}
+
+.main___cartTitle {
+  grid-area: title;
+  grid-column: span 2;
+}
+
+.main__cartClearButton {
+  grid-area: clearButton;
+  grid-column: span 3;
+}
+
+.main__cart {
+  grid-area: cart;
+  grid-column: span 12;
+}

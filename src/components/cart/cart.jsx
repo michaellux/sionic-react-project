@@ -3,7 +3,7 @@ import CartTotal from './cart-total';
 import CartList from './cart-list';
 const Cart = () => {
   return (
-    <div>
+    <div className="main__cart cart">
       <CartTotal />
       <CartList />
     </div>

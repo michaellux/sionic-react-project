@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import './cart-list-item.css';
 
 const CartListItem = ({ goodsincartItem }) => {
-    <Paper>
+  <Paper className="goodslist__item">
       <Grid container wrap="nowrap" spacing={2}>
         <Grid item>
           <img src="" alt={goodsincartItem.title}/>

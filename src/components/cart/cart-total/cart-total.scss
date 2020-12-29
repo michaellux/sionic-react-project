@@ -1,0 +1,20 @@
+@import '../../../scss/functions/rem.scss';
+
+.cart__total * {
+  float: left;
+}
+
+.total__mainItem {
+  width: rem(65px);
+  margin: rem(25px) rem(111px) rem(49px) rem(58px);
+}
+
+.total__sumBlock {
+  width: rem(151px);
+  margin: rem(25px) rem(83px) rem(25px) rem(111px);
+}
+
+.total__button {
+  width: rem(214px);
+  margin: rem(27px) rem(55px) rem(23px) rem(0px);
+}

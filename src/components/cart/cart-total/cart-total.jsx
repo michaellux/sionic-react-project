@@ -1,15 +1,15 @@
 import React from 'react';
-import './cart-total.css';
+import './cart-total.scss';
 const CartTotal = () => {
   return (
-    <div>
-      <span>Xiaomi</span>
-      <div>
-        <span>Стоимость корзины</span>
-        <strong>1 185 000Р</strong>
+    <div className="cart__total total">
+      <span className="total__mainItem">Xiaomi</span>
+      <div className="total__sumBlock sumBlock">
+        <span className="sumBlock__title">Стоимость корзины</span>
+        <strong className="sumBlock__result">1 185 000Р</strong>
       </div>
-      <button>Оформить</button>
-      <img src="#" alt="cart"/>
+      <button className="total__button">Оформить</button>
+      <img className="total__img" src="#" alt="cart"/>
     </div>
   )
 }
