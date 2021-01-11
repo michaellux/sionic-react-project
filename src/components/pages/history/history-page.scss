@@ -1,0 +1,15 @@
+.history__wrapper {
+  grid-template-areas: 
+  "title"
+  "history";
+}
+
+.history__title {
+  grid-area: title;
+  grid-column: span 12;
+}
+
+.history__list {
+  grid-area: history;
+  grid-column: span 12;
+}
