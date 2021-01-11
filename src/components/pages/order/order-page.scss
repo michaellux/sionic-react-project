@@ -1,0 +1,15 @@
+.order__wrapper {
+  grid-template-areas: 
+  "title"
+  "form";
+}
+
+.order__title {
+  grid-area: title;
+  grid-column: span 12;
+}
+
+.order__form {
+  grid-area: form;
+  grid-column: span 9;
+}
