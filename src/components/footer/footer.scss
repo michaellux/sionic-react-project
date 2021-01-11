@@ -1,0 +1,31 @@
+.footer__wrapper {
+  grid-template-areas: 
+  "logo socials apps"
+  "...links ...";
+}
+
+.footer__logo {
+  grid-area: logo;
+  grid-column: span 9;
+}
+
+.footer__socialsBlock {
+  grid-area: socials;
+  grid-column: span 3;
+}
+
+.footer__appsBlock {
+  grid-area: apps;
+  grid-column: span 3;
+}
+
+.footer__copyrightBlock {
+  grid-area: links;
+  grid-column: 5/span 7;
+}
+
+.copyrightBlock__links {
+  display: flex;
+  float: right;
+  margin: 0;
+}
